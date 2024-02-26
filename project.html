@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="CARBRAND" content="true">
+    <meta name="description" content="car sales.">
+
+    <meta http-equiv="refresh" content=""/>
+    <meta name="author" content="<b>George Wairegi">
+<title>COUCHES AUTOS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        background-color:white;
+    }
+    nav{
+        background: blue;
+        width: 100%;
+        overflow: auto;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+     }
+    li{
+        float: left;
+    }
+    nav a{
+        width: 120px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background:blue;
+        font-size: 17px;
+        color: white;
+        padding: 20px 10px;
+        font-family: Arial;
+    }
+    nav a:hover{
+        background: skyblue;
+        color: black;
+    }
+    
+    .container{
+        max-width:1200px;
+        margin:auto;
+        background: auto;
+        overflow: auto;
+        
+    } 
+    .products{
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 390px;
+ }
+    .products img{
+        width: 100%;
+        height: 300px;
+ } 
+    .desc{
+        padding: 50px;
+        text-align: center;
+        font-family: Segoe UI black;
+    }
+    .header{
+        text-align: center;
+        font-family: algerian;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 2px;
+        background: url(images/20.jpg);
+        
+    }
+    .contacts{
+        text-align: center;
+        background-color: white;
+        animation-delay: 5s;
+    }
+    .scrolling{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        overflow:hidden;
+        margin-top: 50px;
+        background-color: red;
+    }
+    .scrolling h2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-family:Lucida Calligraphy;
+        margin: 0;
+        font-size: 3em;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        transform:translateX(100%);
+        animation: scrolling 15s linear infinite;
+        
+    }
+    @keyframes scrolling{
+        0%{
+            transform: translateX(100%);
+            
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    .rowa img{
+        width:150px;
+        height: 100px;
+        padding-left: 30px;
+        border: 2px;
+        margin-top: 2px;
+        text-align: left;
+        background-size: contain;
+        border-radius: 5%;
+        position: relative;
+        align-content: left;
+     }
+    .rowa hover{
+        color: darkgreen;
+    }
+   .marquee{
+        background: url(images/4.jpg);
+        height:60%;
+        width:100%;
+    }
+    footer{
+        background-color:antiquewhite;
+        height: auto;
+        width: 100vw;
+        font-family:"Open Sans";
+        padding-top: 40px;
+        color: black;
+    }
+    .footer-content{
+        display: flex;
+        align-items: center;
+       justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content h4{
+        font-size:1.8rem; 
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+     }
+    .footer-content p{
+        max-width:500px;
+        margin: 10px auto;
+       line-height: 28px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .socials{
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+        box-sizing: 20px;
+    }
+    .socials li{
+        margin: 0 10px;
+        padding: 10px;
+    }
+    .socials a{
+        text-decoration: none;
+        color: black;
+        border-radius: 50px;
+        font-size: 30px;
+    }
+    .socials a1{
+        font-size: 1.1rem;
+        transition: color .4s ease;
+    }
+    .socials a:hover1{
+        color: red;
+    }
+    .maker{
+        text-align: center;
+        font-style: normal;
+        text-decoration-color: coral;
+    }
+    .delivery{
+        background-color:blanchedalmond;
+        text-align: center;
+        font-family:Lucida Calligraphy;
+        margin-left:1px;
+        animation-play-state: running;
+        color:black;
+        
+     }
+    .footer-content p{
+        font-family:monospace;
+        font-size: 20px;
+        color:white;
+    }
+    .socials li{
+        box-sizing: 20px;
+    }
+    .wats{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 15px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+    .my-float{
+        margin-top:16px;
+    }
+    .down{
+        background: url(blue.jpg);
+    }
+    .header h1{
+        color:Haettenschweiler;
+        border-color:darkslategrey;
+        font-family:Matura MT Script Capitals;
+        font-size: 45px;
+        font-weight: 200;
+        text-shadow: 2px;
+        justify-content: space-around;
+    }
+    .footer-bottom span{
+        font-family: Blackadder ITC;
+    }
+    .glow{
+        font-size: 45px;
+        color: #ffffff;
+        text-align: center;
+        -webkit-animation:glow 1s ease-in-out
+            infinite alternate;
+        -moz-animation:glow 1s ease-in-out
+            infinite alternate;
+        animation:glow 1s ease-in-out
+            infinite alternate;
+    }
+    @keyframes glow{
+        from{
+           text-shadow: 0 0 10px #eeeeee,0
+               0 20px #000000, 0 0 30px #000000, 0
+               0 40px #000000,
+                               0 0 50px #9554b3,  0
+               0 60px #9554b3, 0 0 70px #9554b3;
+        }
+        to{
+         text-shadow: 0 0 20px #eeeeee, 0
+             0 30px #ff4da6, 0 0 40px #ff4da6, 0
+             0 50px #ff4da6,
+                            0 0 60px #ff4da6, 0
+            0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+    .nairobi{
+        text-align: center;
+        font-family:cursive;
+        font-size: 20px;
+     }
+    .nairobi{
+        animation: blink 1s steps(1, end) infinite;
+    }
+    @keyframes blink{
+        0%{
+            opacity: 1;
+         }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .delivery div b{
+        color: red;
+        font-family: monospace;
+        font-size: 25px;
+        text-align: left;
+    }
+    .delivery div{
+        font-family:sans-serif;
+    }
+    .delivery em b{
+        color: green;
+        font-family:monospace; 
+        font-style: normal;
+        font-size: 20px;
+    }
+    .header h3{
+        color: blue;
+        border-color: green;
+        font-family: Lucida Handwriting;
+    }
+    .email boo{
+        font:10px;
+        
+    }
+    .delivery h4{
+        font-family: sans-serif;
+        font-style: normal;
+    }
+    .delivery h3{
+        font-family: sans-serif;
+        font-style: normal;
+    }
+    .delivery {
+        align-items: flex-start;
+    }
+    
+    
+    
+   
+   
+    
+</style>    
+</head>
+    <hr>
+    <section class="header">
+        <div class="rowa">
+        <img src="logo.jpg">
+            
+        
+        </div>
+<h1 class="glow">COUCHES AUTOMOTORS</h1><br>
+        <h3>....Buy one car free one</h3>
+        <hr>
+  
+    
+    
+    
+    
+    
+    
+    
+    </section>
+<body>
+    <script>src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"</script>
+<nav>
+    <ul>
+
+        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> HOME </a></li>
+        <li class="active"><a href="About.html"><i class="fa fa-register" aria-hidden="true"></i> ABOUT </a></li>
+    </ul>
+   
+</nav>
+      
+    <div class="scrolling">
+        <h2 class="glow">COUCHES AUTOMOTORS,For Quality Car Brand.</h2>
+    </div><hr>
+    
+    <a class="wats" href="https://web.whatsapp.com/send?phone=0797311251" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <div class="container">
+     
+     <div class="products">
+         <img src="images/4.jpg">
+         <div class="desc">AUDI R5 (KSH 3.5M)
+         </div>
+     </div>
+         <div class="products">
+         <img src="images/5.jpg">
+         <div class="desc">BMW (KSH 3.7M ) 
+         </div>
+     </div>
+             <div class="products">
+         <img src="images/6.jpg">
+         <div class="desc">BMW (KSH 3.9M)
+         </div>
+     </div>
+       
+        
+      <div class="products">
+         <img src="images/7.jpg">
+         <div class="desc">CHEVLORET (KSH 4.0M)</div>
+     </div>
+      <div class="products">
+         <img src="images/8.jpg">
+         <div class="desc">FERRARI (KSH 4.5M) </div>
+     </div>
+      <div class="products">
+         <img src="images/9.jpg">
+         <div class="desc">LAMBORGHINI (KSH 7.M)</div>
+     </div>
+      <div class="products">
+         <img src="images/10.jpg">
+         <div class="desc">FERRARI (KSH 6.5M)</div>
+     </div>
+      <div class="products">
+         <img src="images/11.jpg">
+         <div class="desc">V8 (KSH 22M) </div>
+     </div>
+      <div class="products">
+         <img src="images/12.jpg">
+         <div class="desc">BMW (KSH 6.7M) </div>
+     </div>
+      <div class="products">
+         <img src="images/13.jpg">
+         <div class="desc">FJ CRUISER MERCEDES MODEL (KSH 17M)</div>
+     </div>
+      <div class="products">
+         <img src="images/15.jpg">
+         <div class="desc">RANGE ROVER (KSH 20M) </div>
+     </div>
+      <div class="products">
+         <img src="images/16.jpg">
+         <div class="desc">LAND ROVER (KSH 16.3M) </div>
+     </div>
+      <div class="products">
+         <img src="images/17.jpg">
+         <div class="desc">LEXUS MODEL (KSH 23M) </div>
+     </div>
+      <div class="products">
+         <img src="images/18.jpg">
+         <div class="desc">LEXUS LX600 (KSH 25M) </div>
+     </div>
+      <div class="products">
+         <img src="images/19.jpg">
+         <div class="desc">RANGE ROVER (KSH 17M) </div>
+     </div>
+             <div class="products">
+         <img src="images/20.jpg">
+         <div class="desc">LEXUS (KSH 25M) </div>
+     </div>
+      <div class="products">
+         <img src="images/68.jpg">
+         <div class="desc">ROll LOISE (KSH 7.8M) </div>
+     </div>
+      <div class="products">
+         <img src="images/27.jpg">
+         <div class="desc">TOYOTA LAND CRUISER(BLACK) (KSH 25M) </div>
+     </div>
+      <div class="products">
+         <img src="images/61.jpg">
+         <div class="desc">AI AML (KSH 10M) </div>
+     </div>
+      <div class="products">
+         <img src="images/31.jpg">
+         <div class="desc">AUDI DOUBLE CABIN (KSH 14M) </div>
+     </div>
+      <div class="products">
+         <img src="images/70.jpg">
+         <div class="desc">C2 BWL (KSH 7.5M) </div>
+     </div>
+      <div class="products">
+         <img src="images/73.jpg">
+         <div class="desc">BUGATTI (KSH 13.0M) </div>
+     </div>
+      <div class="products">
+         <img src="images/74.jpg">
+         <div class="desc">FOX WAGON (KSH 3.9M) </div>
+     </div>
+      <div class="products">
+         <img src="images/35.jpg">
+         <div class="desc">AUDI(PINK COLOR) (KSH 3.5M) </div>
+     </div>
+      <div class="products">
+         <img src="images/36.jpg">
+         <div class="desc">AUDI(WHITE COLOR) (KSH 3.6M) </div>
+     </div>
+      <div class="products">
+         <img src="images/37.jpg">
+         <div class="desc">AUDI(GREEN COLOR) (KSH 3.7M) </div>
+     </div>
+      <div class="products">
+         <img src="images/38.jpg">
+         <div class="desc">AUDI(GREY COLOR) (KSH 3.8M) </div>
+     </div>
+      <div class="products">
+         <img src="images/39.jpg">
+         <div class="desc">AUDI(BURYWOOD COLOR) (KSH 3.7M) </div>
+     </div>
+      <div class="products">
+         <img src="images/40.jpg">
+         <div class="desc">AUDI(GREEN COLOR) (KSH 3.8M) </div>
+     </div>
+      <div class="products">
+         <img src="images/41.jpg">
+         <div class="desc">AUDI(YELLOWGREEN COLOR) (KSH 3.6M) </div>
+     </div>
+      <div class="products">
+         <img src="images/42.jpg">
+         <div class="desc">AUDI(BLACK COLOR) (KSH 3.9M)</div>
+     </div>
+      <div class="products">
+         <img src="images/55.jpg">
+         <div class="desc">AUDI (KSH 3.8M) </div>
+     </div>
+      <div class="products">
+         <img src="images/44.jpg">
+         <div class="desc">AUDI(RED COLOR) (KSH 4.2M) </div>
+     </div>
+      <div class="products">
+         <img src="images/45.jpg">
+         <div class="desc">BMW (KSH 5.4M) </div>
+     </div>
+      <div class="products">
+         <img src="images/46.jpg">
+         <div class="desc">HARRIER (KSH 6.8M) </div>
+     </div>
+      <div class="products">
+         <img src="images/47.jpg">
+         <div class="desc">LAND CRUISER (KSH 20M) </div>
+     </div>
+      <div class="products">
+         <img src="images/48.jpg">
+         <div class="desc">FERRARI (KSH 8.2M) </div>
+     </div>
+      <div class="products">
+         <img src="images/49.jpg">
+         <div class="desc">RA CARS (KSH 11M) </div>
+     </div>
+      <div class="products">
+         <img src="images/50.jpg">
+         <div class="desc">ROY LOISE (KSH 9.3M)</div>
+     </div>
+      <div class="products">
+         <img src="images/51.jpg">
+         <div class="desc">AI (KSH 9.0M)</div>
+     </div>
+      <div class="products">
+         <img src="images/52.jpg">
+         <div class="desc">MERCEDES (KSH 7.0M) </div>
+     </div>
+      <div class="products">
+         <img src="images/54.jpg">
+         <div class="desc">HONDA (KSH 3.2M) </div>
+     </div>
+     
+     
+     
+</div>
+    <hr>
+    <section class="marquee">
+        <marquee scrollamount="10" direction="right" >
+            <img src="images/4.jpg" height="600" width"300">
+            <img src="images/5.jpg" height="600" width"300">
+            <img src="images/72.jpg" height="600" width"300">
+            <img src="images/20.jpg" height="600" width"300">
+            <img src="images/49.jpg" height="600" width"300">
+            <img src="images/64.jpg" height="600" width"300">
+            <img src="images/36.jpg" height="600" width"300">
+            <img src="images/42.jpg" height="600" width"300">
+            <img src="images/45.jpg" height="600" width"300">
+            <img src="images/55.jpg" height="600" width"300">
+            <img src="images/52.jpg" height="600" width"300">
+        
+        
+        
+        
+        </marquee>
+    
+    
+    
+    
+    
+    
+    </section>
+    
+    
+<hr>
+    <div class="delivery">
+        <h4>We offer road test in our field to the customer for free with their desired car brand</h4>
+        <h3 class="location">We are located in Nairobi CBD, MOI AVENUE COUCHES PLAZA opposite all saint cathedral</h3>
+       <div>Payment is done after mutual agreement with the customer</div></br>
+    <em><b>Click</b></em> on the <b>whatsapp</b> icon and connect with us for enquiries or call <b>0797311251</b>.
+    <div class="email">Email us on:georgezdicouches254@gmail.com <b>
+        or click:</b>
+        
+        <a href="https://georgezdicouches254@gmail.com" target="_blank">
+        <img class="boo" src="email.png">
+            </a>
+        </b></div>
+     
+           
+        
+        
+   
+    
+        
+        
+    
+    </div>
+    
+    
+    <div class="nairobi">
+        <p><blink><b>WE ARE OPEN 24-7</b></blink></p>
+    
+    </div>
+    
+    
+   
+    <footer class="down">
+        <div class="footer-content">
+        <h4>COUCHES AUTOMOTORS</h4>
+            <p>KINDLY REACH TO US THROUGH</p>
+         <ul class="socials">  
+         <li><a href="https://www.facebook.com/profile.php?id=DI GEORGEZ">
+        <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        <li> <a href="https://instagram.com/COUCHES_GEORGEZ@gmail.com___/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        <li><a href="https://wa.me/qr/DGKCWJA6FXXSO1___/" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+            </a></li>
+        
+             </ul> 
+        </div>
+    </footer>
+    
+    
+  
+    
+</body>
+ </html>
